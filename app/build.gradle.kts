@@ -23,6 +23,7 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+    implementation("org.postgresql:postgresql:42.7.3")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -34,7 +35,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "pbo.App"
+    mainClass = "pbodatabase.App"
 }
 
 tasks.named<Test>("test") {
